@@ -1,0 +1,12 @@
+@mixin assign_margin($value){
+    margin-left: $value;
+    margin-right: $value;
+}
+
+body{
+    @include assign_margin(10px);
+}
+
+div{
+    @include assign_margin(15px);
+}
